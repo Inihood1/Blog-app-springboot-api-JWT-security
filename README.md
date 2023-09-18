@@ -1,7 +1,4 @@
-# Blog-app-springboot-api
- A CRUD blog API in Java springboot
-
- # CRUD Blog API with Spring Security in Spring Boot
+# CRUD Blog API with Spring Security in Spring Boot
 
 Welcome to the CRUD Blog API with Spring Security in Spring Boot! This RESTful API allows you to manage blog posts, categories, users, comments, and more. Whether you are building a blog platform or just exploring Spring Boot and Spring Security, this project provides a comprehensive example.
 
@@ -35,7 +32,7 @@ Before you start using this API, make sure you have the following:
 1. Clone this repository (if you haven't already):
 
    ```bash
-   git clone https://github.com/yourusername/crud-blog-api.git
+   git clone https://github.com/Inihood1/Blog-app-springboot-api-JWT-security.git
    ```
 
 2. Configure your MySQL database settings in `src/main/resources/application.properties`.
@@ -46,14 +43,14 @@ Before you start using this API, make sure you have the following:
    mvn spring-boot:run
    ```
 
-   The API will be available at `http://localhost:8080`.
+   The API will be available at `http://localhost:9090`.
 
 ## Authentication
 
 This API uses Spring Security for authentication. To access certain endpoints, you must obtain a JWT (JSON Web Token) by authenticating with your credentials. The following endpoints are secured:
 
-- `/api/auth/signup`: Register a new user.
-- `/api/auth/signin`: Sign in and receive a JWT.
+- `/app/auth/register`: Register a new user to recieve JWT.
+- `/app/auth/login`: Sign in and receive a JWT.
 
 Include the obtained JWT in the `Authorization` header of your requests:
 
